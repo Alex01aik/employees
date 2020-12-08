@@ -1,38 +1,35 @@
 .App {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.birthdays {
+  border: 1px solid black;
+  border-radius: 15px;
+  height: fit-content;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.title {
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.employeeList{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.letterGroup{
+  margin: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.letterEmployees{
+  margin-left: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.employeeName{
+  display: inline-block;
+  min-width: 130px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
